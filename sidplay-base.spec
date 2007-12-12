@@ -1,6 +1,6 @@
 %define name sidplay-base
 %define version 1.0.9
-%define release 5mdk
+%define release %mkrel 5
 
 
 Summary: A Commodore 64 music player and SID chip emulator
