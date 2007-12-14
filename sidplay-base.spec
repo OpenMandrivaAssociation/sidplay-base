@@ -7,7 +7,6 @@ Summary: A Commodore 64 music player and SID chip emulator
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Icon: sidplay.xpm
 License: GPL
 URL: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/linux.html
 Group: Sound
