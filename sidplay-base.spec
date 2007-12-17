@@ -12,7 +12,6 @@ URL: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/linux.html
 Group: Sound
 Source: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/%{name}-%{version}.tar.bz2
 Patch: sidplay-base-1.0.9-tsid.patch.bz2
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libsidplay-devel < 2
 BuildRequires:  tsid-devel >= 0.7
 BuildRequires: automake1.4
