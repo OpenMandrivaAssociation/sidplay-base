@@ -10,6 +10,7 @@ Release: %{release}
 License: GPL
 URL: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/linux.html
 Group: Sound
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/%{name}-%{version}.tar.bz2
 Patch: sidplay-base-1.0.9-tsid.patch.bz2
 BuildRequires: libsidplay-devel < 2
