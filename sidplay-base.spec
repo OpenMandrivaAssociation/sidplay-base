@@ -1,18 +1,19 @@
 %define name sidplay-base
 %define version 1.0.9
-%define release %mkrel 8
+%define release %mkrel 6
 
 
 Summary: A Commodore 64 music player and SID chip emulator
 Name: %{name}
 Version: %{version}
 Release: %{release}
-License: GPL
+License: GPLv2+
 URL: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/linux.html
 Group: Sound
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/%{name}-%{version}.tar.bz2
 Patch: sidplay-base-1.0.9-tsid.patch.bz2
+Patch1: sidplay-base-1.0.9-gcc4.4.patch
 BuildRequires: libsidplay-devel < 2
 BuildRequires:  tsid-devel >= 0.7
 BuildRequires: automake1.4
@@ -32,6 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %setup -q
 %patch -p1 -b .tsid
+%patch1 -p1
 
 %build
 rm -f configure
