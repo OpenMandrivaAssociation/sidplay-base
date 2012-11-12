@@ -1,0 +1,68 @@
+diff -p -up sidplay-base-1.0.9/sid2wav.cpp~ sidplay-base-1.0.9/sid2wav.cpp
+--- sidplay-base-1.0.9/sid2wav.cpp~	2002-03-11 11:42:10.000000000 +0100
++++ sidplay-base-1.0.9/sid2wav.cpp	2009-05-22 11:51:37.000000000 +0200
+@@ -18,9 +18,9 @@
+ //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ //
+ 
+-#include <iostream.h>
+-#include <iomanip.h>
+-#include <fstream.h>
++#include <iostream>
++#include <iomanip>
++#include <fstream>
+ #include <string.h>
+ 
+ #include <stdlib.h>
+@@ -39,6 +39,8 @@
+ #include <sidplay/fformat.h>
+ #include <sidplay/myendian.h>
+ 
++using namespace std;
++
+ const char s2w_version[] = "1.8";
+ 
+ struct wav_hdr                  // little endian
+diff -p -up sidplay-base-1.0.9/sidcon.cpp~ sidplay-base-1.0.9/sidcon.cpp
+--- sidplay-base-1.0.9/sidcon.cpp~	2002-02-19 20:48:37.000000000 +0100
++++ sidplay-base-1.0.9/sidcon.cpp	2009-05-22 11:52:16.000000000 +0200
+@@ -25,12 +25,14 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
+-#include <iostream.h>
+-#include <iomanip.h>
++#include <iostream>
++#include <iomanip>
+ 
+ #include <sidplay/sidtune.h>
+ #include <sidplay/fformat.h>
+ 
++using namespace std;
++
+ static bool toPSID = true,
+     toSIDPLAY = false,
+     checkOnly = false,
+diff -p -up sidplay-base-1.0.9/sidplay.cpp~ sidplay-base-1.0.9/sidplay.cpp
+--- sidplay-base-1.0.9/sidplay.cpp~	2009-05-22 11:44:36.000000000 +0200
++++ sidplay-base-1.0.9/sidplay.cpp	2009-05-22 11:51:45.000000000 +0200
+@@ -18,8 +18,8 @@
+ //
+ 
+ #include <ctype.h>
+-#include <iomanip.h>
+-#include <fstream.h>
++#include <iomanip>
++#include <fstream>
+ #include <signal.h>
+ #include <stdlib.h>
+ #include <string.h>
+@@ -42,6 +42,8 @@
+ #define DISALLOW_STEREO_SOUND
+ #endif
+ 
++using namespace std;
++
+ // Error and status message numbers.
+ enum
+ {
