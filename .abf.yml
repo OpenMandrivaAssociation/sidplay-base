@@ -1,2 +1,3 @@
 sources:
-  "sidplay-base-1.0.9.tar.bz2:"	930c8917d8014a18eed6407b528617123753aecf
+  "sidplay-base-1.0.9-tsid.patch.bz2": 24649197a20bf506d8a91f43559d2b464e9cd2eb
+  "sidplay-base-1.0.9.tar.bz2": 930c8917d8014a18eed6407b528617123753aecf
