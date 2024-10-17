@@ -8,7 +8,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 License: GPLv2+
-URL: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/linux.html
+URL: https://www.geocities.com/SiliconValley/Lakes/5147/sidplay/linux.html
 Group: Sound
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/%{name}-%{version}.tar.bz2
