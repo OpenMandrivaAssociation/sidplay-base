@@ -14,6 +14,9 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source: http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/%{name}-%{version}.tar.bz2
 Patch: sidplay-base-1.0.9-tsid.patch.bz2
 Patch1: sidplay-base-1.0.9-gcc4.4.patch
+BuildRequires:	autoconf
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: libsidplay-devel < 2
 BuildRequires:  tsid-devel >= 0.7
 BuildRequires: automake1.4
